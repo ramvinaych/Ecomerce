@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-12 col-md-8 col-sm-6 col-lg-8">
+       <div class="card p-1 shadow">
+          <h6>title Page</h6>
+       </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+     <div class="card p-1 shadow">
+           View Employee
+       </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 col-sm-3 col-lg-3 col-md-3">   
+      <div class="card shadow height">
+        
+     </div>   
+  </div>
+  <div (contextmenu)="onRightClick($event)" class="col-12 col-sm-6 col-lg-6 col-md-6">
+     <div class="card shadow height" [matMenuTriggerFor]="contextMenu" #triggerMenu>
+      <div class="text-center">
+        <mat-menu #contextMenu="matMenu" [style.top.px]="menuPosition.y" [style.left.px]="menuPosition.x">
+          <button mat-menu-item (click)="onAction('Action 1')">Action 1</button>
+          <button mat-menu-item (click)="onAction('Action 2')">Action 2</button>
+          <button mat-menu-item (click)="onAction('Action 3')">Action 3</button>
+        </mat-menu>
+      </div>
+    
+     </div>
+  </div>
+  <div class="col-12 col-sm-3 col-lg-3 col-md-3">
+    <div class="card shadow height">
+      hhhhh
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- <button mat-button [matMenuTriggerFor]="contextMenu" #triggerMenu></button> -->
